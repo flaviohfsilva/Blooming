@@ -1,0 +1,123 @@
+/* ------------- VARIÁVEL E BASE -------------  */
+:root{
+   /* --------- CORES --------- */
+    --color-neutral: black;
+    --color-font-newsletter: #8888;
+    --color-neutral-10: #ffff;
+    --color-top-footer: #f6f6f6;
+    --color-neutral-20: #d9d9d9;
+    --color-body: #F9FBFF;
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(img/Frame\ 1.jpg);
+}
+
+/* ------------- NEWSLETTER -------------  */
+.top-footer{
+    align-items: center;
+    background: var(--color-top-footer);
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.font-newsletter{
+    color: var(--color-font-newsletter);
+    font-size: 15px;
+}
+
+.newsLetter{
+    background: var(--color-neutral-20);
+    border-radius: 6px;
+    border: none;
+    color: var(--color-neutral);
+    padding: 0.4rem;
+}
+
+.btn-form{
+    background-color: var(--color-neutral);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    padding: 0.4rem;
+    text-decoration: none;
+}
+
+/* ------------- INFORMAÇÕES DO SITE -------------  */
+ul{
+    list-style: none;
+}
+
+.info-footer{
+    background: var(--color-neutral-10);
+     display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    gap: 5rem;
+    padding: 2rem 0 3rem;
+    width: 100%; 
+}
+
+.info-menu{
+    color: var(--color-font-newsletter);
+    margin-top: 5%;
+}
+
+.info-menu:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.info-menu i{
+    font-size: 1.5rem;
+    margin-top: 5%;
+}
+
+.payment-methods{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 1rem;
+    margin-top: 4%;
+}
+.info-cards:hover{
+    cursor: pointer;
+}
+
+
+#cards{
+    width:4rem;
+}
+
+#pix{
+    width: 2rem;
+    height: 2rem;
+}
+#boleto{
+    width: 2rem;
+    height: 2rem;
+}
+#mastercard{
+    width: 2.3rem;
+    margin-top: 4%;
+}
+
+/* ------------- INFORMAÇÕES DE LOCALIZAÇÃO -------------  */
+.footer-bottom{
+    background: var(--color-top-footer);
+    text-align: center;
+    padding: 0.5rem;
+}
