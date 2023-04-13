@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------------- CSS & FAVICONS--------------- -->
+    <link  href="stylenavbar.css" rel="stylesheet">
+    <link rel="icon" type="img/png" sizes="16x16" href="img/logo.png">
+
+    <!-- --------------- W3 SCHOOLS --------------- -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- --------------- FONTS --------------- -->
+    <link href="https://fonts.googleapis.com/css2?family=Kreon:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kreon:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- --------------- FONTAWESOME --------------- -->
+    <script src="https://kit.fontawesome.com/b4d856d404.js" crossorigin="anonymous"></script>
+
+    <title>Blooming</title>
+
+<head>
+<body>
+    <header>
+        <nav class="navbar">
+          <!-- --------------- TOPBAR --------------- -->
+            <div class="top-navbar">
+                <ul class="top-list">
+                    <li>
+                        <a href="#" class="top-link">FRETE GRÁTIS</a>
+                    </li>
+                    <li>
+                        <a href="#" class="top-link">SOBRE</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- --------------- NAVBAR --------------- -->
+            <div class="w3-container navbar-container">
+                <a href="#" class="logo"><h1>Blooming</h1></a>
+                
+                <form action="" class="search-box">
+                    <div class="search-bar">
+                        <input class="search-txt" type="text" name="search-txt" id="" placeholder="O que está procurando?">
+                        <a href="#" class="search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
+                </form>
+
+
+                <div class="itens-nav">
+                    <a href="#" class="icons-navbar" onclick="document.getElementById('id01').style.display='block'">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+                <div class="itens-nav">
+                    <a href="#">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+                </div>
+            </div>
+                   
+            <!--  --------------- CARRINHO --------------- -->
+           <div id="id01" class="w3-modal">
+              <div class="w3-modal-content w3-animate-right">
+                <div class="top-modal"></div>
+                <header class="w3-container modal-header">
+                  <a href="">
+                    <h2>Carrinho</h2>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-display-topright">X</span>
+                  </a>
+                </header>
+            
+                <div class="w3-container carrinho-body">
+                  <p class="msg-clean">Seu carrinho está vazio!</p>
+                  <a href="navbar.html" class="btn-home">Volte pra home</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- --------------- DROPDOWN --------------- -->
+                      
+            <div class=" w3-container dropdown-container">
+              <div class="dropdown">
+                <a href="#" class="dropdown-btn">Todas as categorias</a>
+                <ul class="dropdown-menu">
+                  <img src="img/img-todasCategorias.avif" alt="categorias">
+                      <hr>
+                      <li class="dropdown-itens">
+                        <a href="#">Flores</a>
+                      </li>
+                      <li class="dropdown-itens">
+                        <a href="#">Buquês de Flores</a>
+                      </li>
+                      <li class="dropdown-itens">
+                        <a href="#">Arranjo de Flores</a>
+                      </li>
+            
+                      <li class="dropdown-itens">
+                        <a href="#">Cestas</a>
+                      </li>
+                      <hr>
+                  </ul>
+              </div>
+
+              <div class="dropdown">
+                <a href="#" class="dropdown-btn">Tipos de Flores</a>
+                <ul class="dropdown-menu">
+                  <img src="img/img-flores.avif" alt="Flores">
+                  <hr>
+                    <li class="dropdown-itens">
+                      <a href="#">Rosas</a>
+                    </li>
+
+                    <li class="dropdown-itens">
+                      <a href="#">Girassóis</a>
+                    </li>
+
+                    <li class="dropdown-itens">
+                      <a href="#">Margaridas</a>
+                    </li>
+
+                    <li class="dropdown-itens">
+                      <a href="#">Violetas</a>
+                    </li>
+                    <li class="dropdown-itens">
+                      <a href="#">Orquídeas</a>
+                    </li>
+                      <hr>
+                  </ul>
+              </div>
+
+              <div class="dropdown">
+                <a href="#" class="dropdown-btn">Buquês de Flores</a>
+                <ul class="dropdown-menu">
+                  <img src="img/img-buque.jpg" alt="Buquê">
+                  <hr>
+                      <li class="dropdown-itens">
+                        <a href="#">Buquê de Rosas</a>
+                      </li>
+                      
+                      <li class="dropdown-itens">
+                        <a href="#">Buquês de Margaridas</a>
+                      </li>
+
+                      <li class="dropdown-itens">
+                        <a href="#">Buquê de Girassóis</a>
+                      </li>
+
+                      <li class="dropdown-itens">
+                        <a href="#">Buquê de Lírios</a>
+                      </li>
+                       <li class="dropdown-itens">
+                        <a href="#">Buquê de Orquídeas</a>
+                      </li>
+                      <hr>
+                  </ul>
+              </div>
+
+              <div class="dropdown">
+                <a href="#" class="dropdown-btn">Arranjo de Flores</a>
+                <ul class="dropdown-menu">
+                  <img src="img/img-arranjo.webp" alt="Arranjo">
+                  <hr>
+                    <li class="dropdown-itens">
+                      <a href="#">Arranjo de Rosas</a>
+                    </li>
+                    
+                    <li class="dropdown-itens">
+                      <a href="#">Arranjo de Margaridas</a>
+                    </li>
+
+                    <li class="dropdown-itens">
+                      <a href="#">Arranjo de Girassóis</a>
+                    </li>
+
+                    <li class="dropdown-itens">
+                      <a href="#">Arranjo de Lírios</a>
+                    </li>
+                    <li class="dropdown-itens">
+                      <a href="#">Arranjo de Orquídeas</a>
+                    </li>
+                      <hr>
+                  </ul>
+              </div>
+
+              <div class="dropdown">
+                <a href="#" class="dropdown-btn">Cesta de Flores</a>
+                <ul class="dropdown-menu-cesta">
+                  <img src="img/cesta-img.webp" alt="Cesta">
+                      <hr>
+                      <li class="dropdown-itens">
+                        <a href="#">Cesta de Rosas</a>
+                      </li>
+                      
+                      <li class="dropdown-itens">
+                        <a href="#">Cesta de Margaridas</a>
+                      </li>
+  
+                      <li class="dropdown-itens">
+                        <a href="#">Cesta de Girassóis</a>
+                      </li>
+  
+                      <li class="dropdown-itens">
+                        <a href="#">Cesta de Lírios</a>
+                      </li>
+                      <li class="dropdown-itens">
+                        <a href="#">Cesta de Orquídeas</a>
+                      </li>
+                      <hr>
+                  </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>
