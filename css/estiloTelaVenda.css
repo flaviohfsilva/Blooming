@@ -1,0 +1,92 @@
+:root {
+    /* --------------- CORES--------------- */
+    --color-body:#f9fbff;
+    --color-neutral: #ffff;
+    --color-neutral-10:#f6f6f6;
+    --color-neutral-20:#8888;
+    --color-neutral-30:#525252;
+    --color-neutral-40: #d9d9d9;
+    --color-font-price: #5d5d5d;
+    --color-red:#661c1c;
+    --color-green: #259F5E;
+}
+
+body{
+    background: url(img/Frame\ 1.jpg);
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    font-family: 'Poppins', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Navbar */
+.top-navbar{
+    background: var(--color-neutral-10);
+    height: 25%;
+    width: 100%; 
+}
+
+.top-list{
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    justify-content: space-around;
+    list-style: none;
+    padding: 5px;
+}
+
+.navbar {
+    background: var(--color-neutral);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-container {
+    display: flex;
+}
+
+.logo {
+    color: var(--color-red);
+    letter-spacing: 0.1em;
+    margin-left: 44%; 
+}
+
+.logo h1 {
+    font-family: 'Kreon', serif;
+}
+
+/* --------------- SEARCH BOX & ITENS NAVBAR--------------- */
+.itens-nav {
+    margin-top: 1.9rem;
+    margin-left: 3%;
+    font-size: 18px;
+    color: black;
+}
+
+.itens-nav:hover {
+    transform: translateY(-5px);
+}
+
+.centralAdm {
+
+}
+
+.centralAdm h4 {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 75px;
+    color: rgb(75, 74, 74);
+}
