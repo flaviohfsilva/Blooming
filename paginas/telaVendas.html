@@ -14,40 +14,183 @@
         rel="stylesheet">
     <!-- --------------- FONTAWESOME --------------- -->
     <script src="https://kit.fontawesome.com/b4d856d404.js" crossorigin="anonymous"></script>
-    <title>Florescendo</title>
+    <title>Blooming</title>
 </head>
 
 <body>
-    <!-- --------------- TOPBAR --------------- -->
-    <div class="top-navbar">
-        <ul class="top-list">
-            <li>
-            </li>
-        </ul>
-    </div>
-    <!-- Navbar -->
-    <div class="w3-container navbar-container">
-        <a href="#" class="logo"><h1>Blooming</h1></a>
-            <hr class="rotated">
-        <div class="centralAdm">
-            <h4>CENTRAL DO ADMINISTRADOR</h4>
-        </div>
-        <div class="itens-nav">
-            <a href="#">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
-        </div>
-        <div class="itens-nav">
-            <a href="#" class="icons-navbar" onclick="document.getElementById('id01').style.display='block'">
-                <i class="fa fa-envelope-o"></i>
-            </a>
-        </div>
-        <div class="itens-nav">
-            <a href="#">
-                <i class="fa-regular fa-user"></i>
-            </a>
-        </div>
-    </div>
-</body>
+    <!-- NAVBAR -->
+    <main>
+    <header>
+        <nav class="navbar">
+            <!-- --------------- TOPBAR --------------- -->
+            <div class="top-navbar"></div>
+            <!-- --------------- NAVBAR --------------- -->
+            <div class="w3-container navbar-container">
+                <a href="#" class="logo">
+                    <h1>Blooming</h1>
+                </a>
 
+                <hr class="bar-home">
+                <div class="subtitle-nav">
+                    <p>Central do Administrador</p>
+                </div>
+
+                <form action="" class="search-box">
+                    <div class="search-bar">
+                        <input class="search-txt" type="text" name="search-txt" id=""
+                            placeholder="O que está procurando?">
+                        <a href="#" class="search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
+                </form>
+                <div class="itens-nav">
+                    <a href="#">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="itens-nav">
+                    <a href="#">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+                </div>
+        </nav>
+    </header>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="sidebar-list">
+        <div class="dropdown">
+            <a href="#" class="">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </a>
+            <button class="dropbtn">Envios</button>
+            <div class="dropdown-content">
+                <a href="#">Meus envios</a>
+                <a href="#">Enviar produtos</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <a href="#" class="">
+                <i class="fa-solid fa-file-lines" style="color: #000000;"></i>
+            </a>
+            <button class="dropbtn">Pedidos</button>
+            <div class="dropdown-content">
+                <a href="#">Meus pedidos</a>
+              <a href="#">Cancelamento</a>
+              <a href="#">Devolução/Reembolso</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <a href="#" class="">
+                <i class="fa fa-wallet" style="color: #000000;"></i>
+            </a>
+            <button class="dropbtn">Finanças</button>
+            <div class="dropdown-content">
+              <a href="#">Minha renda</a>
+              <a href="#">Meu saldo</a>
+              <a href="#">Contas bancárias</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CONTEÚDO PRINCIPAL -->
+      <div class="content">
+        <h4 style="font-family: Poppins; color: #661C1C;">LISTA DE AFAZERES</h4>
+        <div class="telaAfazeres">
+            <h6>Coisas que você precisa se responsabilizar</h6>
+            <div class="listaAfazeres">
+            <div>
+                <h7>Envios em processo</h7>
+                <p>0</p>
+            </div>
+            <div>
+                <h7>Envios efetuados</h7>
+                <p>0</p>
+            </div>
+            <div>
+                <h7>Devolução/Reembolso pendente</h7>
+                <p>0</p>
+            </div>
+            <div>
+                <h7>Cancelamento</h7>
+                <p>0</p>
+            </div>
+            </div>
+        </div>
+      </div>
+    <!-- FOOTER -->
+    <footer class="footer-container">
+        <!-- ------------- NEWSLETTER ------------- -->
+        <div class="top-footer">
+            <span class="font-newsletter">Receba as notícias sobre as promoções</span>
+
+            <form action="">
+                <input type="email" id="email" name="email" placeholder="Endereço de e-mail" class="newsLetter">
+                <button type="submit" class="btn-form">Enviar</button>
+            </form>
+        </div>
+        <!-- ------------- INFORMAÇÕES DO SITE ------------- -->
+        <div class="info-footer">
+             <div class="menu-itens">
+                <ul class="contacts">
+                    <span class="title-footer">Nosso Contato</span>
+                    <li class="info-menu">Fale Conosco</li>
+                    <li class="info-menu">Representantes</li>
+                    <li class="info-menu">Nossa Loja</li>
+                </ul>
+            </div>
+            <div class="menu-itens">
+                <ul>
+                    <span class="title-footer">Dúvidas</span>
+                    <li class="info-menu">Central de Atendimento</li>
+                    <li class="info-menu">Política de Troca e Devolução</li>
+                    <li class="info-menu">Envios e entregas</li>
+                </ul>
+            </div> 
+            <div class="menu-cards">
+                <span class="title-footer">Formas de Pagamento</span>
+                <ul class="payment-methods">
+                    <li class="info-cards">
+                        <img src="../img/visa.png" alt="visa" id="cards">
+                    </li>
+                    <li class="info-cards">
+                        <img src="../img/mastercard.png" alt="mastercard" id="mastercard">
+                    </li>
+                     <li class="info-cards">
+                        <img src="../img/elo.png" alt="elo" id="cards">
+                    </li>
+                    <li class="info-cards">
+                        <img src="../img/hipercard.png" alt="hiper"id="cards">
+                    </li>
+                    <li class="info-cards">
+                        <img src="../img/pix.png" alt="pix" id="pix">
+                    </li>
+                    <li class="info-cards">
+                        <img src="../img/boleto.png" alt="boleto" id="boleto">
+                    </li> 
+                </ul>
+            </div>
+            <div class="menu-itens">
+                <ul class="social-media">
+                    <span class="title-footer">Redes Sociais</span>
+                    <li class="info-menu">
+                        <i class="fa-brands fa-instagram"></i>
+                        BloomingOficial
+                    </li>
+                    <li class="info-menu">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        BloomingOficial
+                    </li> 
+                </ul>
+            </div>  
+        </div>
+        <!-- ------------- INFORMAÇÕES DE LOCALIZAÇÃO ------------- -->
+        <div class="footer-bottom">
+            <span class="font-newsletter">Aldeia, São Lourenço da Mata | CNPJ: 18.002.234/0000.20 | &#169; 2023 Todos os direitos reservados Blooming</span>
+        </div>
+    </footer>
+</main>
+</body>
 </html>

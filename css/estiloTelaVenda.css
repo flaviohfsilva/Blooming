@@ -1,26 +1,32 @@
+/* CSS NAVBAR */
 :root {
     /* --------------- CORES--------------- */
-    --color-body:#f9fbff;
+    --color-body: #f9fbff;
     --color-neutral: #ffff;
-    --color-neutral-10:#f6f6f6;
-    --color-neutral-20:#8888;
-    --color-neutral-30:#525252;
+    --color-neutral-10: #f6f6f6;
+    --color-neutral-20: #8888;
+    --color-neutral-30: #525252;
     --color-neutral-40: #d9d9d9;
     --color-font-price: #5d5d5d;
-    --color-red:#661c1c;
+    --color-red: #661c1c;
+    --color-tag-promo: #e55472;
     --color-green: #259F5E;
+    --color-promo: #f6e6cc;
 }
 
-body{
+body {
     background: url(img/Frame\ 1.jpg);
     font-family: 'Poppins', sans-serif;
+    /* barra de rolagem */
+    /* overflow-y: scroll; */
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-header{
+/* ---------------  HEADER ---------------  */
+header {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
     font-family: 'Poppins', sans-serif;
     position: sticky;
@@ -28,78 +34,291 @@ header{
     z-index: 10;
 }
 
-/* Navbar */
-.top-navbar{
+/* ---------------  TOP NAVBAR ---------------*/
+.top-navbar {
     background: var(--color-neutral-10);
     height: 20%;
-    width: 100%; 
-    padding: 1px;
+    padding: 1%;
+    width: 100%;
 }
 
-.top-list{
-    display: flex;
-    flex-direction: row;
-    font-weight: 700;
-    justify-content: space-around;
-    list-style: none;
-    padding: 5px;
-}
-
+/* --------------- NAVBAR --------------- */
 .navbar {
     background: var(--color-neutral);
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
+
 
 .navbar-container {
     display: flex;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .logo {
     color: var(--color-red);
     letter-spacing: 0.1em;
-    margin-left: 30%; 
+    margin-left: 28%;
 }
 
 .logo h1 {
     font-family: 'Kreon', serif;
 }
 
-/* --------------- SEARCH BOX & ITENS NAVBAR--------------- */
-.itens-nav {
-    margin-top: 1.9rem;
-    left: 300%;
-    margin-left: 3%;
+.bar-home {
+    border-bottom: 1px solid var(--color-font-price);
+    margin-top: 3%;
+    transform: rotate(90deg);
+    width: 3%;
+}
+
+/* --------------- SEARCH BOX --------------- */
+.search-box {
+    margin-left: 7%;
+}
+
+.search-bar {
+    background: var(--color-neutral);
+    border-radius: 15px;
+    margin: 1.3rem;
+    padding: 0.3rem;
+}
+
+.search-txt {
+    background: var(--color-neutral);
+    border-radius: 15px;
+    border: none;
+    color: var(--color-neutral-30);
+    font-size: 15px;
+    outline: none;
+    transition: 0.4s;
+    width: 0;
+}
+
+.search-btn {
+    color: var(--color-neutral-20);
     font-size: 18px;
-    color: black;
+}
+
+.search-bar:hover>.search-txt {
+    background: var(--color-neutral-10);
+    width: 210px;
+    padding: 0.3rem;
+}
+
+/* --------------- ITENS NAVBAR --------------- */
+.itens-nav {
+    color: var(--color-neutral-20);
+    font-size: 18px;
+    margin: 1.5rem;
+}
+
+.subtitle-nav {
+    font-size: 18px;
+    letter-spacing: 0.05rem;
+    margin-top: 0.5%;
+    text-transform: uppercase;
+    transform: translate(5px);
 }
 
 .itens-nav:hover {
     transform: translateY(-5px);
 }
 
-.centralAdm h4 {
+/* CSS FOOTER */
+.footer-container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* gabi */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
 
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 200;
+/* ------------- NEWSLETTER -------------  */
+.top-footer {
+    align-items: center;
+    background: #f6f6f6;
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.font-newsletter {
+    color: #8888;
     font-size: 15px;
-    line-height: 75px;
-    color: rgb(75, 74, 74);
 }
 
-.divisoria {
-    max-width:13px;
-    max-height:50px;
-    width: auto;
-    height: auto;
+.newsLetter {
+    background: #d9d9d9;
+    border-radius: 6px;
+    border: none;
+    color: black;
+    padding: 0.4rem;
 }
 
-.rotated {
-    transform: rotate(90deg);
-    border: 0.5px solid rgb(32, 31, 31);
-    width: 50px;
-    margin-top: 40px;
-  }
+.btn-form {
+    background-color: black;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    padding: 0.4rem;
+    text-decoration: none;
+}
+
+/* ------------- INFORMAÇÕES DO SITE -------------  */
+ul {
+    list-style: none;
+}
+
+.info-footer {
+    background: #ffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5rem;
+    padding: 2rem 0 3rem;
+    width: 100%;
+}
+
+.info-menu {
+    color: #8888;
+    margin-top: 5%;
+}
+
+.info-menu:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.info-menu i {
+    font-size: 1.5rem;
+    margin-top: 5%;
+}
+
+.payment-methods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 4%;
+}
+
+.info-cards:hover {
+    cursor: pointer;
+}
+
+#cards {
+    width: 4rem;
+}
+
+#pix {
+    width: 2rem;
+    height: 2rem;
+}
+
+#boleto {
+    width: 2rem;
+    height: 2rem;
+}
+
+#mastercard {
+    width: 2.3rem;
+    margin-top: 4%;
+}
+
+/* ------------- INFORMAÇÕES DE LOCALIZAÇÃO -------------  */
+.footer-bottom {
+    background: #f6f6f6;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/* CSS SIDEBAR FIXA */
+.sidebar {
+    position: fixed;
+    top: 5;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #ffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    overflow-x: hidden;
+}
+
+.sidebar-list {
+    list-style: none;
+    padding-top: 15px;
+    margin: 1rem;
+}
+
+.content {
+    margin-left: 300px;
+    /* altura da sidebar */
+    margin-top: 60px;
+    /* altura do footer */
+    padding-bottom: 50px;
+    /* Largura da barra lateral */
+    /* padding: 20px;
+    background-color: #259F5E; */
+}
+
+/* DROPDOWN MENU */
+.dropbtn {
+    background-color: #ffff;
+    color: #53525288;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* Estilo do menu dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    margin: 1em;
+}
+
+/* Estilo do conteúdo do dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Estilo dos botões no dropdown */
+.dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #f1f1f1;
+}
+
+/* Mostra o conteúdo do dropdown quando o botão é clicado */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.telaAfazeres {
+    background-color: #ffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    margin-right: 200px;
+    padding: 0.3rem;
+    height: 250px;
+}
+
+.telaAfazeres h6 {
+    padding-left: 0.8rem;
+    color: #525252;
+    font-weight: bold;
+}
+
+.listaAfazeres {
+    /* font-size: 0; */
+
+}
