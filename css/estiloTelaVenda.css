@@ -123,16 +123,15 @@ header {
 }
 
 /* CSS FOOTER */
-.footer-container {
+/*.footer-container {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* gabi */
     position: fixed;
     bottom: 0;
     width: 100%;
     height: 50px;
-}
+}*/
 
 /* ------------- NEWSLETTER -------------  */
 .top-footer {
@@ -141,7 +140,9 @@ header {
     display: flex;
     flex-direction: row;
     gap: 10rem;
+    /*gabi*/
     justify-content: center;
+    margin-top: 10%;
     padding: 0.5rem;
 }
 
@@ -237,25 +238,33 @@ ul {
     padding: 0.5rem;
 }
 
+
+
 /* CSS SIDEBAR FIXA */
-.sidebar {
-    position: fixed;
-    top: 5;
-    left: 0;
-    width: 250px;
-    height: 100%;
+
+
+.sidebar-container{
+   
     background-color: #ffff;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
     overflow-x: hidden;
+    padding: 2%;
+   width: 20%;
 }
 
 .sidebar-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     list-style: none;
     padding-top: 15px;
     margin: 1rem;
 }
 
 .content {
+    
     margin-left: 300px;
     /* altura da sidebar */
     margin-top: 60px;
