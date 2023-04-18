@@ -43,3 +43,4 @@ function carousel() {
  sr.reveal('.menu-home', {duration: 2000});
  sr.reveal('.bar', {duration: 2000});
  sr.reveal('.promo-container', {duration: 2000});
+ sr.reveal('.box', {duration: 2000});
