@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------------- CSS & FAVICONS--------------- -->
+    <link rel="stylesheet" href="../css/produtoSelecionado.css">
+    <link rel="icon" type="img/png" sizes="16x16" href="../img/logo.png">
+
+    <!-- --------------- W3 SCHOOLS --------------- -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- --------------- FONTS --------------- -->
+    <link href="https://fonts.googleapis.com/css2?family=Kreon:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- --------------- FONTAWESOME & SCROLLREVEAL --------------- -->
+    <script src="https://kit.fontawesome.com/b4d856d404.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>Blooming</title>
+
+</head>
+
+<body>
+    <!-- ---------------  HEADER ---------------  -->
+    <header>
+        <nav class="navbar">
+          <!-- --------------- TOPBAR --------------- -->
+            <div class="top-navbar">
+                <ul class="top-list">
+                    <li>
+                        <a href="#" class="top-link">FRETE GRÁTIS</a>
+                    </li>
+                    <li>
+                        <a href="#" class="top-link">SOBRE</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- --------------- NAVBAR --------------- -->
+            <div class="w3-container navbar-container">
+                <a href="../index.html" class="logo"><h1>Blooming</h1></a>
+                
+                <form action="" class="search-box">
+                    <div class="search-bar">
+                        <input class="search-txt" type="text" name="search-txt" id="" placeholder="O que está procurando?">
+                        <a href="#" class="search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
+                </form>
+
+
+                <div class="itens-nav">
+                    <a href="#" class="icons-navbar" onclick="document.getElementById('id01').style.display='block'">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+                <div class="itens-nav">
+                    <a href="#">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+                </div>
+            </div>
+                   
+            <!--  --------------- CARRINHO --------------- -->
+           <div id="id01" class="w3-modal">
+              <div class="w3-modal-content w3-animate-right carrinho-body">
+                <div class="top-modal"></div>
+                <header class="w3-container modal-header">
+                  <a href="../index.html">
+                    <h2>Carrinho</h2>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                  <span onclick="document.getElementById('id01').style.display='none'"
+                  class="w3-button w3-display-topright">X</span>
+                </header>
+            
+                <div class="w3-container carrinho-body">
+                  <p class="msg-clean">Seu carrinho está vazio!</p>
+                  <a href="../index.html" class="btn-home">Volte pra home</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- --------------- DROPDOWN --------------- -->                     
+            <div class=" w3-container dropdown-container">
+              <div class="dropdown">
+                <a href="#" class="dropdown-btn">Todas as categorias</a>
+                <ul class="dropdown-menu">
+                  <img src="../img/img-todasCategorias.avif" alt="categorias">
+                      <hr>
+                      <li class="dropdown-itens">
+                        <a href="#">Flores</a>
+                      </li>
+                      <li class="dropdown-itens">
+                        <a href="#">Buquês de Flores</a>
+                      </li>
+                      <li class="dropdown-itens">
+                        <a href="#">Arranjo de Flores</a>
+                      </li>
+            
+                      <li class="dropdown-itens">
+                        <a href="#">Cestas</a>
+                      </li>
+                      <hr>
+                  </ul>
+              </div>
+
+              <div class="dropdown">
+                <a href="#" class="dropdown-btn">Tipos de Flores</a>
+                <ul class="dropdown-menu">
+                  <img src="../img/img-flores.avif" alt="Flores">
+                  <hr>
+                    <li class="dropdown-itens">
+                      <a href="#">Rosas</a>
+                    </li>
+
+                    <li class="dropdown-itens">
+                      <a href="#">Girassóis</a>
+                    </li>
+
+                    <li class="dropdown-itens">
+                      <a href="#">Margaridas</a>
+                    </li>
+
+                    <li class="dropdown-itens">
+                      <a href="#">Violetas</a>
+                    </li>
+                    <li class="dropdown-itens">
+                      <a href="#">Orquídeas</a>
+                    </li>
+                      <hr>
+                  </ul>
+              </div>
+
+              <div class="dropdown">
+                <a href="#" class="dropdown-btn">Buquês de Flores</a>
+                <ul class="dropdown-menu">
+                  <img src="../img/img-buque.jpg" alt="Buquê">
+                  <hr>
+                      <li class="dropdown-itens">
+                        <a href="#">Buquê de Rosas</a>
+                      </li>
+                      
+                      <li class="dropdown-itens">
+                        <a href="#">Buquês de Margaridas</a>
+                      </li>
+
+                      <li class="dropdown-itens">
+                        <a href="#">Buquê de Girassóis</a>
+                      </li>
+
+                      <li class="dropdown-itens">
+                        <a href="#">Buquê de Lírios</a>
+                      </li>
+                       <li class="dropdown-itens">
+                        <a href="#">Buquê de Orquídeas</a>
+                      </li>
+                      <hr>
+                  </ul>
+              </div>
+
+              <div class="dropdown">
+                <a href="#" class="dropdown-btn">Arranjo de Flores</a>
+                <ul class="dropdown-menu">
+                  <img src="../img/img-arranjo.webp" alt="Arranjo">
+                  <hr>
+                    <li class="dropdown-itens">
+                      <a href="#">Arranjo de Rosas</a>
+                    </li>
+                    
+                    <li class="dropdown-itens">
+                      <a href="#">Arranjo de Margaridas</a>
+                    </li>
+
+                    <li class="dropdown-itens">
+                      <a href="#">Arranjo de Girassóis</a>
+                    </li>
+
+                    <li class="dropdown-itens">
+                      <a href="#">Arranjo de Lírios</a>
+                    </li>
+                    <li class="dropdown-itens">
+                      <a href="#">Arranjo de Orquídeas</a>
+                    </li>
+                      <hr>
+                  </ul>
+              </div>
+
+              <div class="dropdown">
+                <a href="#" class="dropdown-btn">Cesta de Flores</a>
+                <ul class="dropdown-menu-cesta">
+                  <img src="../img/cesta-img.webp" alt="Cesta">
+                      <hr>
+                      <li class="dropdown-itens">
+                        <a href="#">Cesta de Rosas</a>
+                      </li>
+                      
+                      <li class="dropdown-itens">
+                        <a href="#">Cesta de Margaridas</a>
+                      </li>
+  
+                      <li class="dropdown-itens">
+                        <a href="#">Cesta de Girassóis</a>
+                      </li>
+  
+                      <li class="dropdown-itens">
+                        <a href="#">Cesta de Lírios</a>
+                      </li>
+                      <li class="dropdown-itens">
+                        <a href="#">Cesta de Orquídeas</a>
+                      </li>
+                      <hr>
+                  </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ------------- MAIN ------------- -->
+    <main>
+        <!-- ------------- CATEGORY ------------- -->
+        <section class="category" id="category">
+            <div class="w3-container category-container">
+                <span class="category-home">Home</span>
+                <hr class="bar">
+                <p class="category-item">Flores</p>
+                <hr class="bar">
+                <p class="category-item">Orquídea Phalaenóplosis Branca</p>
+            </div>
+        </section>
+
+        
+        <!-- ------------- PRODUTO SELECIONADO ------------- -->
+        <section class="produto-selecionado">
+            <div class="w3-container product-container">
+                <img src="../img/orquidea1.png" alt="" style="width: 20%;">
+
+                <div class="info-product">
+                    <span>Orquídea Phalaenóplosis Branca</span>
+                    <p>R$ 160, 00</p>
+    
+                    <a href="#">Comprar</a>
+    
+                    <hr class="bar-product">
+    
+                    <span>Descrição</span>
+                    <p>
+                        Bela, elegante, discreta e cheirosa, orquídea Phalaenópsis plantada branca, em uma linda embalagem. 
+                        Dimensões: 68cm de Altura e 33cm de Largura 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------- OTHER PRODUCTS ------------- -->
+        <section class="other-products" id="other-products">
+            
+            <a href="#">
+                <h2  class="title-menu">Outras Opções</h2>
+            </a>
+            
+            <div class="menu-home">
+                <div class="itens-home">
+                <img src="../img/buque-orquidea.png" alt="orquidea-buque">
+                    <h3>Buque de Orquídeas Brancas</h3>
+                    <p>R$ 165,00</p>
+
+                    <div class="top-promo">
+                    <p>Novo</p>
+                    </div>
+
+                    <div class="btn-comprar">
+                    <a href="#">Comprar</a>
+                    </div>
+                </div>
+            
+                <div class="itens-home">
+                <img src="../img/arranjo-margaridas.jpeg" alt="orquidea-pink">
+                    <h3>Arranjo de Margaridas Amarelas</h3>
+                    <p>R$ 220,00</p>
+
+                    <div class="top-promo">
+                    <p>Novo</p>
+                    </div>
+
+                    <div class="btn-comprar">
+                    <a href="#">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="itens-home">
+                    <img src="../img/vaso-girassol.jpeg" alt="orquidea-amarela">
+                    <h3>Arranjo de Girasssol em vaso Junco</h3>
+                    <p>R$ 190,00</p>
+
+                    <div class="top-promo">
+                        <p>Novo</p>
+                    </div>
+
+                    <div class="btn-comprar">
+                        <a href="#">Comprar</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <!-- ------------- FOOTER ------------- -->
+     <footer class="footer-container">
+
+        <!-- ------------- NEWSLETTER ------------- -->
+        <div class="top-footer">
+            <span class="font-newsletter">Receba as notícias sobre as promoções</span>
+
+            <form action="">
+                <input type="email" id="email" name="email" placeholder="Endereço de e-mail" class="newsLetter">
+                <button type="submit" class="btn-form">Enviar</button>
+            </form>
+        </div>
+
+        <!-- ------------- INFORMAÇÕES DO SITE ------------- -->
+        <div class="info-footer">
+             <div class="menu-itens">
+                <ul class="contacts">
+                    <span class="title-footer">Nosso Contato</span>
+                    <li class="info-menu">Fale Conosco</li>
+                    <li class="info-menu">Representantes</li>
+                    <li class="info-menu">Nossa Loja</li>
+                </ul>
+            </div>
+
+            <div class="menu-itens">
+                <ul>
+                    <span class="title-footer">Dúvidas</span>
+                    <li class="info-menu">Central de Atendimento</li>
+                    <li class="info-menu">Política de Troca e Devolução</li>
+                    <li class="info-menu">Envios e entregas</li>
+                </ul>
+            </div> 
+
+            <div class="menu-cards">
+                <span class="title-footer">Formas de Pagamento</span>
+                <ul class="payment-methods">
+                    <li class="info-cards">
+                        <img src="../img/visa.png" alt="visa" id="cards">
+                    </li>
+                    <li class="info-cards">
+                        <img src="../img/mastercard.png" alt="mastercard" id="mastercard">
+                    </li>
+                     <li class="info-cards">
+                        <img src="../img/elo.png" alt="elo" id="cards">
+                    </li>
+                    <li class="info-cards">
+                        <img src="../img/hipercard.png" alt="hiper"id="cards">
+                    </li>
+                    <li class="info-cards">
+                        <img src="../img/pix.png" alt="pix" id="pix">
+                    </li>
+                    <li class="info-cards">
+                        <img src="../img/boleto.png" alt="boleto" id="boleto">
+                    </li> 
+                </ul>
+            </div>
+ 
+            <div class="menu-itens">
+                <ul class="social-media">
+                    <span class="title-footer">Redes Sociais</span>
+                    <li class="info-menu">
+                        <i class="fa-brands fa-instagram"></i>
+                        BloomingOficial
+                    </li>
+                    <li class="info-menu">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        BloomingOficial
+                    </li> 
+                </ul>
+            </div>  
+          
+        </div>
+
+        <!-- ------------- INFORMAÇÕES DE LOCALIZAÇÃO ------------- -->
+        <div class="footer-bottom">
+            <span class="font-newsletter">Aldeia, São Lourenço da Mata | CNPJ: 18.002.234/0000.20 | &#169; 2023 Todos os direitos reservados Blooming</span>
+        </div>
+    </footer>
+</body>
+</html>
