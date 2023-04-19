@@ -55,83 +55,125 @@
                 </div>
         </nav>
     </header>
-
     <main>
 
-         <!-- --------------- SIDEBAR --------------- -->
+        <!-- --------------- SIDEBAR --------------- -->
         <section class="sidebar" id="sidebar">
             <div class=" w3-container sidebar-container">
                 <div class="sidebar-list">
-                <div class="dropdown">
-                    <a href="#" class="">
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    </a>
-                    <button class="dropbtn">Envios</button>
-                    <div class="dropdown-content">
-                        <a href="#">Meus envios</a>
-                        <a href="#">Enviar produtos</a>
+                    <div class="dropdown">
+                        <a href="#" class="">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        </a>
+                        <button class="dropbtn">Envios</button>
+                        <div class="dropdown-content">
+                            <a href="#">Meus envios</a>
+                            <a href="#">Enviar produtos</a>
+                        </div>
+                        <hr>
                     </div>
-                    <hr>
-                  </div>
-        
-                  <div class="dropdown">
-                    <a href="#" class="">
-                        <i class="fa-solid fa-file-lines" style="color: #000000;"></i>
-                    </a>
-                    <button class="dropbtn">Pedidos</button>
-                    <div class="dropdown-content">
-                        <a href="#">Meus pedidos</a>
-                      <a href="#">Cancelamento</a>
-                      <a href="#">Devolução/Reembolso</a>
+
+                    <div class="dropdown">
+                        <a href="#" class="">
+                            <i class="fa-solid fa-file-lines" style="color: #000000;"></i>
+                        </a>
+                        <button class="dropbtn">Pedidos</button>
+                        <div class="dropdown-content">
+                            <a href="#">Meus pedidos</a>
+                            <a href="#">Cancelamento</a>
+                            <a href="#">Devolução/Reembolso</a>
+                        </div>
+                        <hr>
                     </div>
-                    <hr>
-                  </div>
-        
-                  <div class="dropdown">
-                    <a href="#" class="">
-                        <i class="fa fa-wallet" style="color: #000000;"></i>
-                    </a>
-                    <button class="dropbtn">Finanças</button>
-                    <div class="dropdown-content">
-                      <a href="#">Minha renda</a>
-                      <a href="#">Meu saldo</a>
-                      <a href="#">Contas bancárias</a>
+
+                    <div class="dropdown">
+                        <a href="#" class="">
+                            <i class="fa fa-wallet" style="color: #000000;"></i>
+                        </a>
+                        <button class="dropbtn">Finanças</button>
+                        <div class="dropdown-content">
+                            <a href="#">Minha renda</a>
+                            <a href="#">Meu saldo</a>
+                            <a href="#">Contas bancárias</a>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-        </section>
-   
-    <!-- --------------- CONTEÚDO PRINCIPAL --------------- -->
-      <section class="content" id="content">
-        <div class="content-container">
-            <h4 style="font-family: Poppins; color: #661C1C;">LISTA DE AFAZERES</h4>
-            <div class="telaAfazeres">
-                <h6>Coisas que você precisa se responsabilizar</h6>
-                <div class="listaAfazeres">
-                <div>
-                    <h7>Envios em processo</h7>
-                    <p>0</p>
-                </div>
-                <div>
-                    <h7>Envios efetuados</h7>
-                    <p>0</p>
-                </div>
-                <div>
-                    <h7>Devolução/Reembolso pendente</h7>
-                    <p>0</p>
-                </div>
-                <div>
-                    <h7>Cancelamento</h7>
-                    <p>0</p>
-                </div>
                 </div>
             </div>
-          </div>
-      </section>
+        </section>
+
+        <!-- --------------- CONTEÚDO PRINCIPAL --------------- -->
+        <section class="classePrincipal" id="content">
+            <div class="content-container">
+                <h4 style="font-family: Poppins; color: #661C1C;">LISTA DE AFAZERES</h4>
+                <div class="telaAfazeres">
+                    <h6>Coisas que você precisa se responsabilizar</h6>
+
+                    <div class="tabelas1">
+                    <table style="display: inline-block;">
+                        <tr>
+                          <th>Envios em processo</th>
+                        </tr>
+                        <tr>
+                          <td>0</td>
+                        </tr>
+                      </table>
+                      <table style="display: inline-block; margin-left: 200px">
+                        <tr>
+                          <th>Envios efetuados</th>
+                        </tr>
+                        <tr>
+                          <td>0</td>
+                        </tr>
+                      </table>
+                    </div>
+
+                      <div class="tabelas2">
+                      <table style="display: inline-block;">
+                        <tr>
+                          <th>Devolução/Reembolso pendente</th>
+                        </tr>
+                        <tr>
+                          <td>0</td>
+                        </tr>
+                      </table>
+                      <table style="display: inline-block; margin-left: 110px">
+                        <tr>
+                          <th>Cancelamentos</th>
+                        </tr>
+                        <tr>
+                          <td>0</td>
+                        </tr>
+                      </table>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- CATÁLOGO -->
+        <div class="tituloCatalogo">
+            <h4 style="font-family: Poppins; color: #661C1C;">CATÁLOGO</h4>
+        </div>
+        <section class="floresCatalogo">
+            <div class="flor1">
+                <img style="width: 250px; height: 200px;" src="../img/flor1.jpeg">
+                <p style="font-size: 13px; text-align: center;">Arranjo de Girassol em vaso Junco</p>
+                <p style="font-size: 13px; color:gray; margin-left: 13px; margin-top: -0.7rem;">R$ 00,00</p>
+                <button class="botao1">ATUALIZAR</button>
+                <button class="botao2">REMOVER</button>
+            </div>
+            <div class="flor2">
+                <img style="width: 250px; height: 200px;" src="../img/flor2.jpeg">
+                <p style="font-size: 13px; text-align: center;">Arranjo de Margaridas Amarelas</p>
+                <p style="font-size: 13px; color:gray; margin-left: 19px; margin-top: -0.7rem;">R$ 00,00</p>
+                <button class="botao1">ATUALIZAR</button>
+                <button class="botao2">REMOVER</button>
+            </div>
+        </section>
+        <div>
+            <button class="botaoAdd">+</button>
+        </div>
     </main>
-   
-    <!-- --------------- FOOTER --------------- -->
+
     <footer class="footer-container">
         <!-- ------------- NEWSLETTER ------------- -->
         <div class="top-footer">
@@ -144,7 +186,7 @@
         </div>
         <!-- ------------- INFORMAÇÕES DO SITE ------------- -->
         <div class="info-footer">
-             <div class="menu-itens">
+            <div class="menu-itens">
                 <ul class="contacts">
                     <span class="title-footer">Nosso Contato</span>
                     <li class="info-menu">Fale Conosco</li>
@@ -159,7 +201,7 @@
                     <li class="info-menu">Política de Troca e Devolução</li>
                     <li class="info-menu">Envios e entregas</li>
                 </ul>
-            </div> 
+            </div>
             <div class="menu-cards">
                 <span class="title-footer">Formas de Pagamento</span>
                 <ul class="payment-methods">
@@ -169,18 +211,18 @@
                     <li class="info-cards">
                         <img src="../img/mastercard.png" alt="mastercard" id="mastercard">
                     </li>
-                     <li class="info-cards">
+                    <li class="info-cards">
                         <img src="../img/elo.png" alt="elo" id="cards">
                     </li>
                     <li class="info-cards">
-                        <img src="../img/hipercard.png" alt="hiper"id="cards">
+                        <img src="../img/hipercard.png" alt="hiper" id="cards">
                     </li>
                     <li class="info-cards">
                         <img src="../img/pix.png" alt="pix" id="pix">
                     </li>
                     <li class="info-cards">
                         <img src="../img/boleto.png" alt="boleto" id="boleto">
-                    </li> 
+                    </li>
                 </ul>
             </div>
             <div class="menu-itens">
@@ -193,14 +235,16 @@
                     <li class="info-menu">
                         <i class="fa-brands fa-facebook-f"></i>
                         BloomingOficial
-                    </li> 
+                    </li>
                 </ul>
-            </div>  
+            </div>
         </div>
         <!-- ------------- INFORMAÇÕES DE LOCALIZAÇÃO ------------- -->
         <div class="footer-bottom">
-            <span class="font-newsletter">Aldeia, São Lourenço da Mata | CNPJ: 18.002.234/0000.20 | &#169; 2023 Todos os direitos reservados Blooming</span>
+            <span class="font-newsletter">Aldeia, São Lourenço da Mata | CNPJ: 18.002.234/0000.20 | &#169; 2023 Todos os
+                direitos reservados Blooming</span>
         </div>
     </footer>
 </body>
+
 </html>
