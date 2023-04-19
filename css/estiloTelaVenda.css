@@ -123,12 +123,11 @@ header {
 }
 
 /* CSS FOOTER */
-.footer-container {
+*/ .footer-container {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* gabi */
-    position: auto;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 50px;
@@ -141,7 +140,9 @@ header {
     display: flex;
     flex-direction: row;
     gap: 10rem;
+    /*gabi*/
     justify-content: center;
+    margin-top: 10%;
     padding: 0.5rem;
 }
 
@@ -238,33 +239,37 @@ ul {
 }
 
 /* CSS SIDEBAR FIXA */
-.sidebar {
-    position: fixed;
-    top: 5;
-    left: 0;
-    width: 250px;
-    height: 100%;
+.sidebar-container {
+
     background-color: #ffff;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
     overflow-x: hidden;
+    padding: 2%;
+    width: 20%;
+    /* gabi */
+    height: 500px;
 }
 
 .sidebar-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     list-style: none;
     padding-top: 15px;
     margin: 1rem;
 }
 
-.content {
-    margin-left: 300px;
-    /* altura da sidebar */
-    margin-top: 60px;
-    /* altura do footer */
-    padding-bottom: 50px;
-    /* Largura da barra lateral */
-    /* padding: 20px;
-    background-color: #259F5E; */
+.classePrincipal {
+    position: absolute;
+    top: 120px;
+    left: 300px;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
 }
+
 
 /* DROPDOWN MENU */
 .dropbtn {
@@ -307,7 +312,8 @@ ul {
 .telaAfazeres {
     background-color: #ffff;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
-    margin-right: 200px;
+    margin-right: 150px;
+    /* margin-left: 50px; */
     padding: 0.3rem;
     height: 250px;
 }
@@ -318,7 +324,78 @@ ul {
     font-weight: bold;
 }
 
-.listaAfazeres {
-    /* font-size: 0; */
+.tituloCatalogo {
+    /* text-align: center; */
+    margin-left: 43rem;
+    margin-top: -7rem;
+}
 
+.floresCatalogo {
+    margin-top: 3rem;
+}
+
+.flor1 {
+    display: inline-block;
+    margin-left: 25rem;
+    background-color: #ffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    height: 260px;
+}
+
+.flor2 {
+    display: inline-block;
+    margin-left: 10rem;
+    background-color: #ffff;
+    height: 260px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.botao1 {
+    background-color: #ffff;
+    border-radius: 3px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+    border: none;
+    cursor: pointer;
+    color: rgb(109, 103, 103);
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-top: 1rem;
+}
+
+.botao2 {
+    background-color: #661C1C;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin-left: 20px;
+}
+
+.botaoAdd {
+    margin-left: 43rem;
+    margin-top: 5rem;
+    cursor: pointer;
+    background-color: #F9FBFF;
+    box-shadow: 2px 1px 4px 3px rgba(0, 0, 0, 0.25);
+    color:#259F5E;
+    height: 90px;
+    width: 120px;
+    border-radius: 7px;
+    border: none;
+    font-size: 35px;
+}
+
+.tabelas1 table, .tabelas2 table {
+    color: #5D5D5D;
+    /* margin-right: 100px; */
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+telaAfazeres, td {
+    color: #259F5E;
+}
+
+telaAfazeres, th {
+    font-weight: normal;
 }
