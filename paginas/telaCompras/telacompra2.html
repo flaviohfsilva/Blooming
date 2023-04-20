@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- --------------- CSS & FAVICONS--------------- -->
-    <link rel="stylesheet" href="../../css/produtoSelecionado.css">
-    <link rel="icon" type="img/png" sizes="16x16" href="../..//img/logo.png">
+    <link rel="stylesheet" href="../../css/telaCompra.css">
+    <link rel="icon" type="img/png" sizes="16x16" href="../../img/logo.png">
 
     <!-- --------------- W3 SCHOOLS --------------- -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -18,21 +18,19 @@
 
     <!-- --------------- FONTAWESOME & SCROLLREVEAL --------------- -->
     <script src="https://kit.fontawesome.com/b4d856d404.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
 
     <title>Blooming</title>
-
 </head>
-
+   
 <body>
-    <!-- ---------------  HEADER ---------------  -->
+     <!-- ---------------  HEADER ---------------  -->
     <header>
         <nav class="navbar">
           <!-- --------------- TOPBAR --------------- -->
             <div class="top-navbar">
                 <ul class="top-list">
                     <li>
-                        <a href="../../index.html" class="top-link">FRETE GRÁTIS</a>
+                        <a href="#" class="top-link">FRETE GRÁTIS</a>
                     </li>
                     <li>
                         <a href="#" class="top-link">SOBRE</a>
@@ -67,24 +65,24 @@
             </div>
                    
             <!--  --------------- CARRINHO --------------- -->
-           <div id="id01" class="w3-modal">
-              <div class="w3-modal-content w3-animate-right carrinho-body">
-                <div class="top-modal"></div>
-                <header class="w3-container modal-header">
-                  <a href="../../index.html">
-                    <h2>Carrinho</h2>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </a>
-                  <span onclick="document.getElementById('id01').style.display='none'"
-                  class="w3-button w3-display-topright">X</span>
-                </header>
-            
-                <div class="w3-container carrinho-body">
-                  <p class="msg-clean">Seu carrinho está vazio!</p>
-                  <a href="../../index.html" class="btn-home">Volte pra home</a>
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-animate-right carrinho-body">
+                  <div class="top-modal"></div>
+                  <header class="w3-container modal-header">
+                    <a href="../../index.html">
+                      <h2>Carrinho</h2>
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-display-topright">X</span>
+                  </header>
+              
+                  <div class="w3-container carrinho-body">
+                    <p class="msg-clean">Seu carrinho está vazio!</p>
+                    <a href="../../index.html" class="btn-home">Volte pra home</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
             <!-- --------------- DROPDOWN --------------- -->                     
             <div class=" w3-container dropdown-container">
@@ -221,49 +219,62 @@
         </nav>
     </header>
 
-    <!-- ------------- MAIN ------------- -->
+
     <main>
-        <!-- ------------- CATEGORY ------------- -->
-        <section class="category" id="category">
-            <div class="w3-container category-container">
-                <span class="category-home">
-                    <a href="../../index.html">Home</a>
-                </span>
-                <hr class="bar">
-                <p class="category-item">Tipo de Flores</p>
-                <hr class="bar">
-                <p class="category-item">Orquídeas</p>
-                <hr class="bar">
-                <p class="category-item">Orquídea Phalaenóplosis Amarela</p>
+        <!-- --------------- My-cart --------------- -->
+
+        <section class="carrinho" id="carrinho">
+          <h1 class="title-carrinho">Meu Carrinho</h1>
+
+          <div class=" w3-container container-cart">
+            <div class="subtitles-cart">
+              <span class="subtitle-1">Produto</span>
+              <span>Quantidade</span>
+              <span>Total</span>
             </div>
+          </div>
         </section>
 
 
-        <!-- ------------- PRODUTO SELECIONADO ------------- -->
-        <section class="produto-selecionado">
-            <div class="w3-container product-container">
-                <img src="../../img/orquidea3.png" alt="orquidea" >
+        
+        <div class="itens-carrinho" id="itens-carrinho">
+          <div class="w3-container itens-container">
 
-                <div class="info-product">
-                    <span class="title-info">Orquídea Phalaenóplosis Amarela</span>
-                    <p class="subtitle-info">R$ 150, 00</p>
-    
-                    <a href="../telaCompras/telacompra3.html" class="btn-product">Comprar</a>
-    
-                    <hr class="bar-product">
-    
-                    <span class="descrition-title">Descrição</span>
-                    <p class="descrition">
-                        Bela, elegante, discreta e cheirosa, Orquídea Phalaenópsis Amarela plantada, em uma linda embalagem. 
-                    </p>
+            <div class="img-carrinho">
+              <img src="../../img/orquidea2.png" alt="orquidea">
+              <p>Orquídea Phalaenopolis Pink</p>
 
-                    <p class="descrition">Dimensões: 43cm de Altura, 17cm de Largura e 17cm de Volume</p>
-                </div>
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
             </div>
-        </section>
 
-        <!-- ------------- OTHER PRODUCTS ------------- -->
-        <section class="other-products" id="other-products">
+      
+            <div class="price">
+              <p>R$ 175,00</p>
+              <i class="fa-solid fa-trash-can"></i>
+            </div>
+
+            <div class="other-buttons">
+              <a  href="../../index.html" class="more-products">
+                <p>Ver mais Produtos</p>
+              </a>
+
+              <a href="#" class="clean-cart">
+                <i class="fa-solid fa-trash-can"></i> 
+                <p>Esvaziar Carrinho</p>
+              </a>
+
+             
+            </div>
+            <a href="../..//paginas/pagamentoFlores/telaPagamento2.html " class="finalizar-compra">Finalizar Compra</a>
+          </div>
+        </div>
+
+       
+        
+           <!-- ------------- OTHER PRODUCTS ------------- -->
+           <section class="other-products" id="other-products">
             
             <a href="#">
                 <h2  class="title-menu">Outras Opções</h2>
@@ -271,9 +282,9 @@
             
             <div class="menu-home">
                 <div class="itens-home">
-                <img src="../../img/buque-img1.webp" alt="buque-degrade">
-                    <h3>Buquê de Rosas enrolado em jornal</h3>
-                    <p>R$ 160,00</p>
+                <img src="../../img/cesta-img.webp" alt="girassol-cesta">
+                    <h3>Cesta de Girassóis</h3>
+                    <p>R$ 250,00</p>
 
                     <div class="top-promo">
                     <p>Novo</p>
@@ -285,12 +296,12 @@
                 </div>
             
                 <div class="itens-home">
-                <img src="../../img/rosa-img3.webp" alt="rosas">
-                    <h3>Buquê de Rosas Esperance</h3>
-                    <p>R$ 200,00</p>
+                <img src="../../img/arranjo-margaridas.jpeg" alt="orquidea-pink">
+                    <h3>Arranjo de Margaridas Amarelas</h3>
+                    <p>R$ 220,00</p>
 
                     <div class="top-promo">
-                    <p>Novo</p>
+                      <p>Novo</p>
                     </div>
 
                     <div class="btn-comprar">
@@ -299,100 +310,104 @@
                 </div>
 
                 <div class="itens-home">
-                    <img src="../../img/cesta-img.webp" alt="cesta-girassol">
-                    <h3>Cesta de Girassol</h3>
-                    <p>R$ 250,00</p>
+                    <img src="../../img/vaso-girassol.jpeg" alt="orquidea-amarela">
+                    <h3>Arranjo de Girasssol em vaso Junco</h3>
+                    <p>R$ 190,00</p>
 
                     <div class="top-promo">
                         <p>Novo</p>
                     </div>
 
                     <div class="btn-comprar">
-                        <a href="#">Comprar</a>
+                        <a href="/paginas/pagamentoFlores/telaPagamento2.html">Comprar</a>
                     </div>
                     </div>
                 </div>
             </div>
-        </section>
+          </section>
     </main>
-
-     <!-- ------------- FOOTER ------------- -->
-     <footer class="footer-container">
-
-        <!-- ------------- NEWSLETTER ------------- -->
-        <div class="top-footer">
-            <span class="font-newsletter">Receba as notícias sobre as promoções</span>
-
-            <form action="">
-                <input type="email" id="email" name="email" placeholder="Endereço de e-mail" class="newsLetter">
-                <button type="submit" class="btn-form">Enviar</button>
-            </form>
-        </div>
-
-        <!-- ------------- INFORMAÇÕES DO SITE ------------- -->
-        <div class="info-footer">
-             <div class="menu-itens">
-                <ul class="contacts">
-                    <span class="title-footer">Nosso Contato</span>
-                    <li class="info-menu">Fale Conosco</li>
-                    <li class="info-menu">Representantes</li>
-                    <li class="info-menu">Nossa Loja</li>
-                </ul>
-            </div>
-
-            <div class="menu-itens">
-                <ul>
-                    <span class="title-footer">Dúvidas</span>
-                    <li class="info-menu">Central de Atendimento</li>
-                    <li class="info-menu">Política de Troca e Devolução</li>
-                    <li class="info-menu">Envios e entregas</li>
-                </ul>
-            </div> 
-
-            <div class="menu-cards">
-                <span class="title-footer">Formas de Pagamento</span>
-                <ul class="payment-methods">
-                    <li class="info-cards">
-                        <img src="../img/visa.png" alt="visa" id="cards">
-                    </li>
-                    <li class="info-cards">
-                        <img src="../img/mastercard.png" alt="mastercard" id="mastercard">
-                    </li>
-                     <li class="info-cards">
-                        <img src="../img/elo.png" alt="elo" id="cards">
-                    </li>
-                    <li class="info-cards">
-                        <img src="../img/hipercard.png" alt="hiper"id="cards">
-                    </li>
-                    <li class="info-cards">
-                        <img src="../img/pix.png" alt="pix" id="pix">
-                    </li>
-                    <li class="info-cards">
-                        <img src="../img/boleto.png" alt="boleto" id="boleto">
-                    </li> 
-                </ul>
-            </div>
  
-            <div class="menu-itens">
-                <ul class="social-media">
-                    <span class="title-footer">Redes Sociais</span>
-                    <li class="info-menu">
-                        <i class="fa-brands fa-instagram"></i>
-                        BloomingOficial
-                    </li>
-                    <li class="info-menu">
-                        <i class="fa-brands fa-facebook-f"></i>
-                        BloomingOficial
-                    </li> 
-                </ul>
-            </div>  
           
-        </div>
 
-        <!-- ------------- INFORMAÇÕES DE LOCALIZAÇÃO ------------- -->
-        <div class="footer-bottom">
-            <span class="font-newsletter">Aldeia, São Lourenço da Mata | CNPJ: 18.002.234/0000.20 | &#169; 2023 Todos os direitos reservados Blooming</span>
-        </div>
-    </footer>
+
+    <!-- ------------- FOOTER ------------- -->
+    <footer class="footer-container">
+
+      <!-- ------------- NEWSLETTER ------------- -->
+      <div class="top-footer">
+          <span class="font-newsletter">Receba as notícias sobre as promoções</span>
+
+          <form action="">
+              <input type="email" id="email" name="email" placeholder="Endereço de e-mail" class="newsLetter">
+              <button type="submit" class="btn-form">Enviar</button>
+          </form>
+      </div>
+
+      <!-- ------------- INFORMAÇÕES DO SITE ------------- -->
+      <div class="info-footer">
+           <div class="menu-itens">
+              <ul class="contacts">
+                  <span class="title-footer">Nosso Contato</span>
+                  <li class="info-menu">Fale Conosco</li>
+                  <li class="info-menu">Representantes</li>
+                  <li class="info-menu">Nossa Loja</li>
+              </ul>
+          </div>
+
+          <div class="menu-itens">
+              <ul>
+                  <span class="title-footer">Dúvidas</span>
+                  <li class="info-menu">Central de Atendimento</li>
+                  <li class="info-menu">Política de Troca e Devolução</li>
+                  <li class="info-menu">Envios e entregas</li>
+              </ul>
+          </div> 
+
+          <div class="menu-cards">
+              <span class="title-footer">Formas de Pagamento</span>
+              <ul class="payment-methods">
+                  <li class="info-cards">
+                      <img src="../../img/visa.png" alt="visa" id="cards">
+                  </li>
+                  <li class="info-cards">
+                      <img src="../../img/mastercard.png" alt="mastercard" id="mastercard">
+                  </li>
+                   <li class="info-cards">
+                      <img src="../../img/elo.png" alt="elo" id="cards">
+                  </li>
+                  <li class="info-cards">
+                      <img src="../img/hipercard.png" alt="hiper"id="cards">
+                  </li>
+                  <li class="info-cards">
+                      <img src="../../img/pix.png" alt="pix" id="pix">
+                  </li>
+                  <li class="info-cards">
+                      <img src="../../img/boleto.png" alt="boleto" id="boleto">
+                  </li> 
+              </ul>
+          </div>
+
+          <div class="menu-itens">
+              <ul class="social-media">
+                  <span class="title-footer">Redes Sociais</span>
+                  <li class="info-menu">
+                      <i class="fa-brands fa-instagram"></i>
+                      BloomingOficial
+                  </li>
+                  <li class="info-menu">
+                      <i class="fa-brands fa-facebook-f"></i>
+                      BloomingOficial
+                  </li> 
+              </ul>
+          </div>  
+        
+      </div>
+
+      <!-- ------------- INFORMAÇÕES DE LOCALIZAÇÃO ------------- -->
+      <div class="footer-bottom">
+          <span class="font-newsletter">Aldeia, São Lourenço da Mata | CNPJ: 18.002.234/0000.20 | &#169; 2023 Todos os direitos reservados Blooming</span>
+      </div>
+  </footer>
 </body>
 </html>
+    
