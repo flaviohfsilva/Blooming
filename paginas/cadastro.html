@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- --------------- CSS & FAVICONS--------------- -->
+    <link  href="../css/cadastro.css" rel="stylesheet">
+    <link rel="icon" type="img/png" sizes="16x16" href="../img/logo.png">
+
+
+    <!-- --------------- W3 SCHOOLS --------------- -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+    <!-- --------------- FONTS --------------- -->
+    <link href="https://fonts.googleapis.com/css2?family=Kreon:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kreon:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- --------------- FONTAWESOME --------------- -->
+    <script src="https://kit.fontawesome.com/b4d856d404.js" crossorigin="anonymous"></script>
+
+
+    <title>Blooming</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+</head>
+
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+          <!-- --------------- TOPBAR --------------- -->
+            <div class="top-navbar"></div>
+
+
+            <!-- --------------- NAVBAR --------------- -->
+            <div class="w3-container navbar-container">
+                <a href="../index.html" class="logo"><h1>Blooming</h1></a>
+            </div>
+        </nav>
+    </header>
+
+
+        <!-- MAIN -->
+    <main>
+        <section class="container-form">
+            <!-- ======================= FORM CADASTRO ======================= -->
+           <div class="container">
+                <div class="card">
+                    <form action="">
+                    
+                        <h1> Entre e crie sua conta </h1>
+
+
+                        <div class="label-float">
+                            <input type="text" id="nome" placeholder="" required>
+                            <label for="nome"> Nome </label>
+                        </div>
+                    
+
+
+                        <div class="label-float">
+                            <input type="email" id="enderecoemail" placeholder="" required>
+                            <label for="endereçoemail"> Endereço de e-mail</label>
+                        </div>
+                    
+                        <div class="label-float">
+                            <input type="password" id="senha" placeholder=" " required>
+                            <label for="senha"> Senha </label>
+                            <i class="fa fa-eye olho-cadastro" aria-hidden="true"></i>
+
+                        </div>
+
+
+                        <div class="label-float">
+                            <input type="text" id="confirmsenha" placeholder="" required>
+                            <label for="confirmsenha"> Confirma Senha </label>
+                            <i class="fa fa-eye olho-cadastro" aria-hidden="true"></i>
+                        </div>
+                    
+                    
+                        <div class="justify-center">
+                            <button onclick="window.location.href='../paginas/login.html'">Cadastrar </button>
+                        </div>
+
+
+                        <hr>
+                    
+                        <p> Já tem uma conta? Clique para
+                            <a class="btn-cadastro" href="../paginas/login.html"> Entrar </a>
+                        </p>
+                        
+                        <p class="confirmacao">
+                            Ao se registrar, você concorda com os nossos <a href="#" class="terms">Termos de Serviços</a><br>
+                            e você reconhece que leu e entendeu a nossa <a href="#" class="terms">Política de Privacidade</a>.
+                        </p>
+                    </form>
+                </div>  
+           </div>
+        </section>
+    </main>
+</body>
+</html>
+

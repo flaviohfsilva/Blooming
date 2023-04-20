@@ -1,0 +1,326 @@
+/* --------------- VARIÁVEL E BASE --------------- */
+:root{
+    /* --------------- CORES--------------- */
+    --color-body:#f9fbff;
+    --color-neutral: #ffff;
+    --color-neutral-10:#f6f6f6;
+    --color-neutral-20:#8888;
+    --color-neutral-30:#525252;
+    --color-neutral-40: #d9d9d9;
+    --color-font-price: #5d5d5d;
+    --color-red:#661c1c;
+    --color-green: #259F5E;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(../img/body-login.jpg);
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+header{
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    font-family: 'Poppins', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+/* ---------------  TOP NAVBAR ---------------*/
+.top-navbar{
+    background: var(--color-neutral-10);
+    height: 20%;
+    padding: 1%;
+    width: 100%;
+}
+
+
+.top-list{
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    justify-content: space-around;
+    list-style: none;
+    padding: 5px;
+}
+
+
+.top-link{
+    color: var(--color-red);
+    letter-spacing: 0.1em;
+}
+
+
+/* --------------- NAVBAR --------------- */
+.navbar{
+    background: var(--color-neutral);
+}
+
+
+.navbar-container{
+    display: flex;
+}
+
+
+.logo{
+    color: var(--color-red);
+    letter-spacing: 0.1em;
+    margin-left: 44%;
+}
+
+
+.logo h1{
+    font-family: 'Kreon', serif;
+}
+
+
+/* ======================= FORMULÁRIO LOGIN ======================= */
+
+
+.container{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+.card{
+    background-color:#faf7f770;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #9b999960;
+}
+
+
+h1{
+    text-align:center;
+}
+
+/* ======================= INPUT & BUTTONS AREA ======================= */
+
+.label-float input{
+    color: var(--color-neutral-30);
+    width: 90%;
+    padding: 12px;
+    display: inline;
+    border: 0;
+    border-bottom: 1px solid #000000;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all 3s ease-out;
+    border-radius: 0%;
+}
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.label-float input:focus {
+    border-bottom: 1px solid #888888;
+    margin-top: 0;
+}
+
+
+.label-float label{
+    color:#757575;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+}
+
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+    color: var(--color-red) !important;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 0;
+}
+ button{
+    background-color:#000000;
+    border-bottom:0;
+    padding: 0.2rem;
+    font-size: 12px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor:pointer;
+    outline: none;
+    color:var(--color-neutral);
+    letter-spacing: 0.1rem;
+    width: 50%;
+ }
+
+
+ button:hover{
+    transform:translateY(-2px);
+ }
+
+ .justify-center{
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    margin-top: 10%;
+    text-transform: uppercase;
+ }
+
+ .info-cadastro{
+    margin-top: 10%;
+ }
+
+ .btn-cadastro{
+    background-color: #000000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    color: var(--color-neutral);
+    padding: 5px;
+    border-radius: 6px;
+   
+}
+
+ /* ======================= BAR DE SEPARAÇÃO ======================= */
+
+.bar{
+  color:var(--color-red);
+  display: flex;
+  flex-direction: row;
+  margin-top: 10%;
+}
+
+.bar p{
+    color: #888888;
+    font-size: 12px;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 30%;
+}
+
+ .bar-separate{
+    border-bottom: 2px solid #661c1c !important;
+    width: 50%;
+ }
+
+ .bar-separate2{
+    border-bottom: 2px solid #661c1c !important;
+    width: 50%;
+ }
+
+ hr{
+    color: var(--color-neutral-20);
+    content: "Entre com";
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 35%;
+    position: relative;
+    top: -0.7em;
+
+ }
+
+ p{
+    color: #888888;
+    font-size: 14px;
+    text-align: center;
+ }
+
+.fa-eye{
+    color: var(--color-neutral-20);
+    position: absolute;
+    top: 20px;
+    left: 240px;
+    font-size:5;    
+    cursor: pointer;
+}
+
+/* ======================= LEMBRAR DE MIM e ESQUECEU A SENHA ======================= */
+.remember-me{
+    display: flex;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10%;
+}
+
+.remember-me p{
+    color: var(--color-red);
+    margin-left: 2%;
+}
+
+.esqueceu-senha{
+    font-size: 9px;
+    transform: translate(30px, 4px);
+}
+
+
+/* ======================= BOTÕES DO GOOGLE & FACEBOOK ======================= */
+.other-buttons{
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 5%;
+    width: 40%;
+}
+
+.login-button{
+    align-items: center;
+    background: var(--color-neutral);
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+    padding: 0.6rem;
+    transform: translate(20px, -10px);
+}
+
+.login-button p {
+    color: var(--color-neutral-30);
+    font-size: 12px;
+    font-weight: 600;
+    transform: translate(5px);
+}
+
+.fa-facebook{
+    color: var(--color-neutral-20);
+}
+
+.login-button img{
+    padding: 0;
+    margin: 0;
+    width: 10%;
+}
+.fa-google{
+    color: var(--color-neutral-20);
+}
+
+/* =======================  ADM AREA =======================  */
+
+.adm-area{
+    margin-top: 5%;
+    text-align: left;
+}
+
+.adm-area a{
+    color: var(--color-neutral-30);
+}
+
+.adm-area a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}

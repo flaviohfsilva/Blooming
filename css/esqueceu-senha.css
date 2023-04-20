@@ -1,0 +1,220 @@
+/* --------------- VARIÁVEL E BASE --------------- */
+:root{
+    /* --------------- CORES--------------- */
+    --color-body:#f9fbff;
+    --color-neutral: #ffff;
+    --color-neutral-10:#f6f6f6;
+    --color-neutral-20:#8888;
+    --color-neutral-30:#525252;
+    --color-neutral-40: #d9d9d9;
+    --color-font-price: #5d5d5d;
+    --color-red:#661c1c;
+    --color-green: #259F5E;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background: url(../img/body-login.jpg);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+header{
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    font-family: 'Poppins', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+/* ---------------  TOP NAVBAR ---------------*/
+.top-navbar{
+    background: var(--color-neutral-10);
+    height: 20%;
+    padding: 1%;
+    width: 100%;
+}
+
+
+.top-list{
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    justify-content: space-around;
+    list-style: none;
+    padding: 5px;
+}
+
+
+.top-link{
+    color: var(--color-red);
+    letter-spacing: 0.1em;
+}
+
+
+/* --------------- NAVBAR --------------- */
+.navbar{
+    background: var(--color-neutral);
+}
+
+
+.navbar-container{
+    display: flex;
+}
+
+
+.logo{
+    color: var(--color-red);
+    letter-spacing: 0.1em;
+    margin-left: 44%;
+}
+
+
+.logo h1{
+    font-family: 'Kreon', serif;
+}
+
+
+
+/*======================= FORMULÁRIO ESQUECEU A SENHA ======================= */
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+.card{
+    font-family: 'Poppins', sans-serif;
+    background-color:#faf7f770;
+    padding: 40px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #9b999960;
+    width: 38%;
+}
+
+
+h1{
+    text-align:center;
+    font-size: px;
+}
+.label-float input{
+
+
+    width: 90%;
+    padding: 12px;
+    display: inline;
+    border: 0;
+    border-bottom: 1px solid #000000;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all 3s ease-out;
+    border-radius: 0%;
+}
+
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.label-float input:focus{
+    border-bottom: 1px solid #888888;
+}
+
+
+.label-float label{
+    color:#757575;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+}
+
+
+.label-float input:focus + label,
+.label-float input:valid + label {
+    font-size: 13px;
+    margin-top: 0;
+    color: #661c1c;
+    font-weight: 600;
+}
+ button{
+    background-color:#000000 ;
+    border-bottom:0;
+    padding: 7px;
+    font-weight:bold;
+    font-size: 12px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor:pointer;
+    outline: none;
+    color: var(--color-neutral);
+    transition: all;
+
+ }
+
+
+ button:hover{
+    transform:translateY(-5px);
+ }
+
+ .justify-center{
+    display: flex;
+    justify-content: center;
+ }
+
+ .btn-cancel{
+    background: var(--color-red);
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    color: var(--color-neutral);
+    padding: 0.5rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+ }
+
+ .btn-cancel:hover{
+    transform:translateY(-5px);
+ }
+
+ .btn-confirm{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-left: 10%;
+ }
+ /*======================= ESQUECEU A SENHA  TITLES ======================= */
+
+ .senha-subtitle{
+    color: var(--color-neutral-20);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5%;
+    text-align: center;
+ }
+
+ .senha-info{
+    color: var(--color-neutral-30);
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 5%;
+    text-align: center;
+ }

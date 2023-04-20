@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- --------------- CSS & FAVICONS--------------- -->
+    <link  href="../css/login.css" rel="stylesheet">
+    <link rel="icon" type="img/png" sizes="16x16" href="../img/logo.png">
+
+
+    <!-- --------------- W3 SCHOOLS --------------- -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+    <!-- --------------- FONTS --------------- -->
+    <link href="https://fonts.googleapis.com/css2?family=Kreon:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kreon:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- --------------- FONTAWESOME --------------- -->
+    <script src="https://kit.fontawesome.com/b4d856d404.js" crossorigin="anonymous"></script>
+
+
+    <title>Blooming</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+          <!-- --------------- TOPBAR --------------- -->
+            <div class="top-navbar"></div>
+
+
+            <!-- --------------- NAVBAR --------------- -->
+            <div class="w3-container navbar-container">
+                <a href="../index.html" class="logo"><h1>Blooming</h1></a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="container-form">
+            <!-- ======================= FORM LOGIN ======================= -->
+           <div class="container">
+                <div class="card">
+
+                    <form action="">
+                        <h1> Entre na sua conta </h1>
+
+
+                        <div class="label-float">
+                            <input type="email" id="enderecoemail" placeholder="" required>
+                            <label for="endereçoemail"> Endereço de e-mail </label>
+                        </div>
+                     
+                        <div class="label-float">
+                            <input type="password" id="senha" placeholder=" " required>
+                            <label for="senha"> Senha </label>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="remember-me">
+                            <input type="checkbox" class="checkbox">
+                            <p>Lembrar de mim</p>
+                            <p class="esqueceu-senha">
+                                <a href="../paginas/esqueceu-senha.html">Esqueceu a senha?</a>
+                            </p>
+                        </div>
+                       
+                        <div class="justify-center">
+                            <button onclick="window.location.href='../index.html'"> ENTRAR </button>
+                        </div>
+    
+                        <!-- ======================= PARTE DE BAIXO DO LOGIN   ======================= -->
+                        <div class="bar">
+                            <hr class="bar-separate">
+                            <p>Entre com</p>
+                            <hr class="bar-separate2">
+                        </div>
+                        
+                        <div class="other-buttons">
+                            <a class="login-button" target="_blank" href="https://accounts.google.com/InteractiveLogin/signinchooser?elo=1&ifkv=AQMjQ7RbxVyIgPvfQiFHWNeUNRhKoTcxPuu2liHazvsdE9WPd9xTgQqVPjKRaW5gGSrRrLrEHyP4&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                                <i class="fa-brands fa-google"></i>
+                                <p>Google</p>
+                            </a>
+
+                            <a class="login-button" target="_blank" href="https://www.facebook.com/login.php?skip_api_login=1&api_key=249542723714494&kid_directed_site=0&app_id=249542723714494&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D249542723714494%26client_secret%3D60731d4554faa3126ec2e85b903475bf%26redirect_uri%3Dhttps%253A%252F%252Fwww.richards.com.br%252FOAuth%252FFacebook%252FCallback%26response_type%3Dcode%26scope%3Demail%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Df6156ac9-7e9a-48ae-9fa2-afc54c530c98%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.richards.com.br%2FOAuth%2FFacebook%2FCallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%23_%3D_&display=page&locale=pt_BR&pl_dbl=0" >
+                                <i class="fa-brands fa-facebook"></i>
+                                <p>Facebook</p>
+                            </a>
+                        </div>
+
+                        <p class="info-cadastro">
+                            Não tem uma conta ainda ?
+                            <a class="btn-cadastro" href="../paginas/cadastro.html"> Cadastre-se </a>
+                        </p>
+
+                        <p class="adm-area">
+                            Entre como Administrador
+                            <a href="../paginas/login-adm.html"> Entrar</a>
+                        </p>
+                    </form>
+                </div>
+           </div>
+        </section>
+    </main>
+</body>
+</html>

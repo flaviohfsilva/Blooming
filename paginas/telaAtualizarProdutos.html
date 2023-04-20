@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- --------------- CSS & FAVICONS --------------- -->
+     <link href="../css/cssTelaAdicionarProdutos.css" rel="stylesheet">
+     <link rel="icon" type="img/png" sizes="16x16" href="../img/logo.png">
+
+    <!-- --------------- W3 SCHOOLS --------------- -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- --------------- FONTS --------------- -->
+    <link href="https://fonts.googleapis.com/css2?family=Kreon:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kreon:wght@300&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+   
+        <!-- --------------- FONTAWESOME --------------- -->
+    <script src="https://kit.fontawesome.com/b4d856d404.js" crossorigin="anonymous"></script>
+    
+    <title>Blooming</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <!-- --------------- TOPBAR --------------- -->
+            <div class="top-navbar"></div>
+            <!-- --------------- NAVBAR --------------- -->
+            <div class="w3-container navbar-container">
+                <a href="#" class="logo">
+                    <h1>Blooming</h1>
+                </a>
+
+                <hr class="bar-home">
+                <div class="subtitle-nav">
+                    <p>Central do Administrador</p>
+                </div>
+
+                <form action="" class="search-box">
+                    <div class="search-bar">
+                        <input class="search-txt" type="text" name="search-txt" id=""
+                            placeholder="O que está procurando?">
+                        <a href="#" class="search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
+                </form>
+                <div class="itens-nav">
+                    <a href="#">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="itens-nav">
+                    <a href="#">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+                </div>
+        </nav>
+    </header>
+<!-- HR E TÍTULO DA PAGINA -->
+    <div class="tituloPagina">
+        <h2 id="tituloPagina" style="font-family: Poppins; color: #000000;">ATUALIZAR PRODUTO</h2>
+        <div class="divBarraLateral">
+            <hr class="bar-titulo">
+        </div>
+    </div>
+    <main>
+
+        <!-- --------------- CONTAINER1 --------------- -->
+        <section class="classePrincipal" id="content">
+            <div class="content-container">
+                <h3 style="font-family: Poppins; color: #661C1C;">Informações Básicas</h3>
+                    <div class="telaInformacoesBasicas">
+                        <div class="conteudo1">
+                            <form class="formInformacoesBasicas">
+                                <label for="fnome">Nome &nbsp &nbsp &nbsp</label>
+                                <input type="text" id="fnome" value="Arranjo de Girassol em Vaso Junco"><br><br>
+                            </form>
+                            <form class="formInformacoesBasicas">
+                                <label for="categoria">Categoria</label>
+	                                <select id="categoria" name="categoria">
+                                        <option value="Arranjo de Flores"> Arranjo de Flores</option>
+		                                <option value="FloresTropicais">Flores Tropicais</option>
+	                                </select>                                
+                            </form>
+                            <form id="formOrganizacao" class="formInformacoesBasicas">
+                                <label id="labelTextArea" for="lname">Descrição</label>
+                                <textarea id="lname" name="text" rows="5" cols="50">Dedique todo o seu carinho atravéz deste lindo arranjo. Um vaso de vidro, revestido a junco, composto por 4 girassóis vibrantes, em meio à folhagens verdes de tango e husco. Seu presente será carinhosamente embalado pelos nossos floristas.</textarea>
+                            </form>
+                        </div> 
+                    </div>
+            </div>
+            <div id="containerMarginTop" class="content-container">
+                <h3 style="font-family: Poppins; color: #661C1C;">Informações De Venda</h3>
+                    <div class="telaInformacoesVendas">
+                        <div class="conteudo2">
+                            <form class="formInformacoesBasicas">
+                                <label for="fPreco">Preço &nbsp &nbsp &nbsp</label>
+                                <input type="text" id="fPreco" placeholder="R&#36" value="R&#36 389,00"></form><br><br>
+                            </form>
+                            <form class="formInformacoesBasicas">
+                                <label for="fEstoque">Estoque &nbsp </label>
+                                <input type="text" id="fEstoque" value="15"><br><br>
+                            </form>
+                        </div> 
+                    </div>
+            </div>
+            <div id="containerMarginTop" class="content-container">
+                <h3 style="font-family: Poppins; color: #661C1C;">Gerenciamento de Mídia</h3>
+                    <div class="telaGerenciamentoMidia">
+                        <h4 style="font-family: Kreon; color: #000000;"><strong>Imagens do Produto</strong></h4>
+                        <div id="organizaImagens">
+                            <div id="adicionarImagens">
+                                <div id="contentContainerFotos" class="content-container">
+                                    <img id="imagemCapa" src="../img/vaso-girassol.jpeg" alt="Imagens Girassóis Amarelos"></img>
+                                </div>
+                                <label id="labelFotos" for="adicionarImagens">Foto de Capa</label>
+                            </div>
+                            <div id="adicionarImagens">
+                                <div id="contentContainerFotos" class="content-container">
+                                    <button class="botaoAdd">+</button>
+                                </div>
+                                <label id="labelFotos" for="adicionarImagens">Imagem 1</label>
+                            </div>
+                            <div id="adicionarImagens">
+                                <div id="contentContainerFotos" class="content-container">
+                                    <button class="botaoAdd">+</button>
+                                </div>
+                                <label id="labelFotos" for="adicionarImagens">Imagem 2</label>
+                            </div>
+                    </div>
+            </div>
+            <br></br>
+
+            <a href="../paginas/telaVendas.html" class="botaoCancelar">CANCELAR</a>
+            <button class="botaoSalvar">SALVAR E ATUALIZAR</button>
+
+
+            <br></br>
+        </section>
+</body>
+
+</html>
