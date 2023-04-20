@@ -240,7 +240,6 @@ ul {
 
 /* CSS SIDEBAR FIXA */
 .sidebar-container {
-
     background-color: #ffff;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
     display: flex;
@@ -249,7 +248,7 @@ ul {
     padding: 2%;
     width: 20%;
     /* gabi */
-    height: 500px;
+    height: 550px;
 }
 
 .sidebar-list {
@@ -268,6 +267,7 @@ ul {
     right: 0;
     bottom: 0;
     padding: 20px;
+    width: 950px;
 }
 
 
@@ -293,6 +293,14 @@ ul {
     display: none;
     position: absolute;
     z-index: 1;
+    margin-left: 2rem;
+    width: 150px;
+}
+
+.sidebar-list, a {
+    color: #5D5D5D;
+    display: inline-block;
+    font-size: 13px;
 }
 
 /* Estilo dos botões no dropdown */
@@ -327,7 +335,7 @@ ul {
 .tituloCatalogo {
     /* text-align: center; */
     margin-left: 43rem;
-    margin-top: -7rem;
+    margin-top: -10rem;
 }
 
 .floresCatalogo {
@@ -377,7 +385,7 @@ ul {
     cursor: pointer;
     background-color: #F9FBFF;
     box-shadow: 2px 1px 4px 3px rgba(0, 0, 0, 0.25);
-    color:#259F5E;
+    color: #259F5E;
     height: 90px;
     width: 120px;
     border-radius: 7px;
@@ -385,17 +393,24 @@ ul {
     font-size: 35px;
 }
 
-.tabelas1 table, .tabelas2 table {
+.tabelas1 table,
+.tabelas2 table {
     color: #5D5D5D;
     /* margin-right: 100px; */
     margin-left: 1rem;
     margin-top: 2rem;
 }
 
-telaAfazeres, td {
+telaAfazeres,
+td {
     color: #259F5E;
 }
 
-telaAfazeres, th {
+telaAfazeres,
+th {
     font-weight: normal;
+}
+
+.menu-itens {
+    margin-right: 1.3rem;
 }
