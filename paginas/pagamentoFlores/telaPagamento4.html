@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------------- CSS & FAVICONS--------------- -->
+    <link rel="stylesheet" href="../../css/stylePagamento.css">
+    <link rel="icon" type="img/png" sizes="16x16" href="../../img/logo.png">
+
+    <!-- --------------- W3 SCHOOLS --------------- -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- --------------- FONTS --------------- -->
+    <link href="https://fonts.googleapis.com/css2?family=Kreon:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kreon:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- --------------- FONTAWESOME --------------- -->
+    <script src="https://kit.fontawesome.com/b4d856d404.js" crossorigin="anonymous"></script>
+    
+    <title>Blooming</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <!-- --------------- TOPBAR --------------- -->
+            <div class="top-navbar"></div>
+
+            <!-- --------------- NAVBAR --------------- -->
+            <div class="w3-container navbar-container">
+                <a href="../../index.html" class="logo"><h1>Blooming</h1></a>
+                
+               <hr class="bar-home">
+                <div class="itens-nav">
+                    <a href="#">
+                      <i class="fa-solid fa-lock"></i>
+                    </a>
+                </div> 
+                <div class="subtitle-nav">
+                  <p>Checkout Seguro</p>
+                </div>
+        </nav>
+    </header>
+
+    <!-- --------------- MAIN --------------- -->
+    <main>
+        <!-- --------------- ITENS PARA COMPRAR --------------- -->
+        <div class="w3-container container-resumo">
+          <div class="itens-resumo">
+              <img src="../../img/buque-img1.webp" alt="">
+              <h5>Buquê de rosas enrolado em jornal</h5>
+
+              <div class="qtde-itens">
+                  <span>Qtde</span>
+                  <p>1</p>
+              </div>
+
+              <hr class="bar-resumo">
+
+              <!-- --------------- DELIVERY --------------- -->
+                <div class="delivery">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Entrega</th>
+                        <th>Frete</th>
+                        <th>Prazo</th>
+                      </tr>
+                    </thead>
+                  </div>
+
+                  <div class="selecaoCheckbox">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <input type="checkbox" name="" id="">
+                         Frota própria
+                        </td>
+                        <td>
+                          <p class="frete-price">Grátis</p>
+                        </td>
+                        <td>Hoje</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+
+                  <table class="table2">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <input type="checkbox" name="" id="" style="margin-left: -0.7rem;">
+                          SEDEX
+                        </td>
+                        <td>
+                          <p class="frete-price">R$ 20,00</p>
+                        </td>
+                        <td>2 dias</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+          </div>
+      </div>
+
+      <!--  --------------- ENDEREÇO  --------------- -->
+      <section class="address" id="address">
+          <h2 class="title-section">Endereço de Entrega</h2>
+          <div class="w3-container container-address">
+             <h3 class="subtitle-address">Destinatário</h3>
+
+
+             <div class="name-user">
+                  <h4>Mussum ipsum cacildis</h4>
+             </div>
+
+
+             <div class="address-info">
+                  <h4>Rua mussum cacildis, 90 / Próximo a Mussum House / Afogados, Recife - PE</h4>
+
+                  <div class="btn">
+                    <button class="button-address">Adicionar Endereço</button>
+                 </div>
+             </div>
+            </div>
+      </section>
+      <!--  --------------- MODAL ADICIONAR ENDEREÇO  --------------- -->
+      
+
+      <!--  --------------- PAGAMENTO  --------------- -->
+        <div class="titles">
+          <h2 class="title-section">Forma de Pagamento</h2>
+          <h2 class="title-checkout">Resumo do Pedido</h2>
+        </div>
+       
+      <section class="payment" id="payment">
+  
+        <div class="w3-container container-payment">
+        
+            <h3 class="subtitle-payment">Escolha o meio de Pagamento</h3>
+
+           <div class="payments">
+                <div class="method-payment">
+                    <a href="#">                  
+                        <img src="../../img/cartao.png" alt="cartão" id="cartao">
+                        <p>Cartão de crédito</p>
+                    </a>
+                </div>
+
+                <div class="method-payment">
+                    <a href="#">                      
+                      <img src="../../img/pix.png" alt="pix" id="pix-method">
+                        <p>PIX</p>
+                    </a>
+                </div>
+
+                <div class="method-payment">
+                    <a href="#">
+                        <img src="../../img/boleto.png" alt="boleto" id="boleto-method">
+                        <p>Boleto</p>
+                    </a>
+                </div> 
+           </div> 
+        </div>  
+        
+
+        <!-- --------------- CHECKOUT ---------------  -->
+        <div class="ckeckout" id="checkout">
+    
+          <div class="w3-container checkout-container">
+              <div class="subtile-checkout">
+                <span>Subtotal </span>
+                <p class="price-check">R$ 160,00</p>
+              </div>
+    
+              <div class="subtile-checkout">
+                <span>Frete</span>
+                <p class="price-frete">R$ 00,00</p>
+              </div>
+    
+              <div class="subtile-checkout">
+                <span>Cupom</span>
+                <p class="info-check">Usar Cupom</p>
+              </div>
+              
+              <hr class="bar-check">
+
+            <a href="#" class="btn-checkout">Finalizar Compra</a>
+          </div>
+        </div>
+      </section>
+  </main>
+
+
+  
+    <!-- ------------- FOOTER ------------- -->
+     <footer class="footer-container">
+
+        <!-- ------------- NEWSLETTER ------------- -->
+        <div class="top-footer">
+            <span class="font-newsletter">Receba as notícias sobre as promoções</span>
+
+            <form action="">
+                <input type="email" id="email" name="email" placeholder="Endereço de e-mail" class="newsLetter">
+                <button type="submit" class="btn-form">Enviar</button>
+            </form>
+        </div>
+
+        <!-- ------------- INFORMAÇÕES DO SITE ------------- -->
+        <div class="info-footer">
+             <div class="menu-itens">
+                <ul class="contacts">
+                    <span class="title-footer">Nosso Contato</span>
+                    <li class="info-menu">Fale Conosco</li>
+                    <li class="info-menu">Representantes</li>
+                    <li class="info-menu">Nossa Loja</li>
+                </ul>
+            </div>
+
+            <div class="menu-itens">
+                <ul>
+                    <span class="title-footer">Dúvidas</span>
+                    <li class="info-menu">Central de Atendimento</li>
+                    <li class="info-menu">Política de Troca e Devolução</li>
+                    <li class="info-menu">Envios e entregas</li>
+                </ul>
+            </div> 
+
+            <div class="menu-cards">
+                <span class="title-footer">Formas de Pagamento</span>
+                <ul class="payment-methods">
+                    <li class="info-cards">
+                        <img src="../../img/visa.png" alt="visa" id="cards">
+                    </li>
+                    <li class="info-cards">
+                        <img src="../../img/mastercard.png" alt="mastercard" id="mastercard">
+                    </li>
+                     <li class="info-cards">
+                        <img src="../../img/elo.png" alt="elo" id="cards">
+                    </li>
+                    <li class="info-cards">
+                        <img src="../../img/hipercard.png" alt="hiper"id="cards">
+                    </li>
+                    <li class="info-cards">
+                        <img src="../../img/pix.png" alt="pix" id="pix">
+                    </li>
+                    <li class="info-cards">
+                        <img src="../../img/boleto.png" alt="boleto" id="boleto">
+                    </li> 
+                </ul>
+            </div>
+ 
+            <div class="menu-itens">
+                <ul class="social-media">
+                    <span class="title-footer">Redes Sociais</span>
+                    <li class="info-menu">
+                        <i class="fa-brands fa-instagram"></i>
+                        BloomingOficial
+                    </li>
+                    <li class="info-menu">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        BloomingOficial
+                    </li> 
+                </ul>
+            </div>  
+        </div>
+        <!-- ------------- INFORMAÇÕES DE LOCALIZAÇÃO ------------- -->
+        <div class="footer-bottom">
+            <span class="font-newsletter">Aldeia, São Lourenço da Mata | CNPJ: 18.002.234/0000.20 | &#169; 2023 Todos os direitos reservados Blooming</span>
+        </div>
+    </footer>
+</body>
+</html>
