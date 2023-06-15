@@ -17,6 +17,7 @@
 body {
     background: url(img/Frame\ 1.jpg);
     font-family: 'Poppins', sans-serif;
+    background-color: var(--color-body);
     /* barra de rolagem */
     /* overflow-y: scroll; */
 }
@@ -360,32 +361,37 @@ ul {
 
 .botao1 {
     background-color: #ffff;
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
-    border: none;
     cursor: pointer;
     color: rgb(109, 103, 103);
+    font-weight: bold;
+    letter-spacing: 1px;
     margin-right: 20px;
     margin-left: 10px;
     margin-top: 1rem;
+    padding: 5px;
 }
 
 .botao2 {
     background-color: #661C1C;
-    border-radius: 3px;
-    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
     margin-left: 20px;
+    padding: 5px;
 }
 
 .botaoAdd {
     margin-left: 43rem;
     margin-top: 5rem;
     cursor: pointer;
+    color: var(--color-green);
     background-color: #F9FBFF;
     box-shadow: 2px 1px 4px 3px rgba(0, 0, 0, 0.25);
-    color: #259F5E;
     height: 90px;
     width: 120px;
     border-radius: 7px;
