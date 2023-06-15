@@ -536,7 +536,18 @@
 
     <!-- CHATBOT -->
     <div>
-      <df-messenger intent="WELCOME" chat-title="rosalinda" agent-id="8569361d-9324-465e-b625-756cf7c5b81e"
+      <style>
+        df-messenger {
+          --df-messenger-bot-message: #EDF3FF;
+          --df-messenger-button-titlebar-color: rgb(255, 255, 255);
+          --df-messenger-chat-background-color: #ffffff;
+          --df-messenger-font-color: rgb(0, 0, 0);
+          --df-messenger-send-icon: #27ae02;
+          --df-messenger-user-message: #661C1CB2;
+        }
+      </style>
+      
+      <df-messenger intent="WELCOME" chat-title="Rosalinda" chat-icon="" agent-id="8569361d-9324-465e-b625-756cf7c5b81e"
         language-code="pt-br"></df-messenger>
     </div>
   </main>
