@@ -44,3 +44,11 @@ function carousel() {
  sr.reveal('.bar', {duration: 2000});
  sr.reveal('.promo-container', {duration: 2000});
  sr.reveal('.box', {duration: 2000});
+
+ //MODO ESCURO
+ const chk = document.getElementById('chk');
+
+chk.addEventListener('change',() => {
+    document.body.classList.toggle("dark-theme")
+});
+
